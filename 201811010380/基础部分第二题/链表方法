@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+typedef struct node    //定义一个结点的结构体
+{
+	int data;    //结构体的元素代表猴子的编号
+	struct node *next;
+}Lnode,*linklist;
+
+linklist input(int m)   //m为循环链表中的最大值
+{
+	linklist head,p,q;
+     head=new Lnode;
+     q=new Lnode;
+     head->next=NULL;
+	 head->next=q;
+	 p=q;
+	 int i=1;       //定义一个变量i并将其初始化为1
+	while(i<=m)     //利用while循环开始录入链表的各值
+	{
+		q=new Lnode;
+        q->data=i;
+		p->next=q;
+        p=q;
+		i++;
+	}
+    q->next =(head->next)->next;  //将链表的末指针指向序列中的第一个结点
+	return head;	              //返回头指针
+}
+void select(linklist L,int i)
+{
+	Lnode *q,*s;
+	 q=L;
+	 int y=1;
+	 int sum=0;      //sum用来记录循环链表直接变化次数
+	 while(q!=q->next)    //只要循环链表中不止一个结点时，一直做循环
+	 {
+
+		 if(sum==y*i)      //当sum为第i次循环时的倍数y*i时
+		 {
+			 cout<<(q->next)->data<<endl; //输出当前结点的值
+			 y++;
+			 sum++;
+			 s=q->next;
+			 q->next=s->next;
+			 delete s;    //删除刚输出的那个结点
+		 }
+		 else
+		 {
+		  q=q->next;
+		  sum++;
+		 }
+	 }
+	 cout<<"最后一个出圈猴子的号码："<<endl;
+		 cout<<q->data<<endl;
+}
+
+int main(void)
+{
+	linklist L;       //定义一个头指针L
+	int m,n;
+	cout<<"请输入猴子的个数："<<endl;
+	cin>>m;
+	cout<<"请输入想要计数的位置："<<endl;
+	cin>>n;
+	L=input(m);
+	cout<<"猴子离开的顺序："<<endl;
+     select(L,n);
+}
