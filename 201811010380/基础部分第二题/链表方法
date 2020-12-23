@@ -50,7 +50,7 @@ void select(linklist L,int i)
 		  sum++;
 		 }
 	 }
-	 cout<<"最后一个出圈猴子的号码："<<endl;
+	 cout<<"猴子王的号码："<<endl;
 		 cout<<q->data<<endl;
 }
 
