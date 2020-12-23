@@ -28,6 +28,6 @@ int main(void)
 #elif question==5
 	stack();
 #elif question==6
-
+	class_test();
 #endif 
 }

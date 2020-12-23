@@ -1,4 +1,4 @@
-#define question 5
+#define question 6
 #if question==1
 void fun(int& a, int& b, int& c);		//引用传参
 int fun(int& a, int& b);				//返回值传参
@@ -13,5 +13,5 @@ void virus(const char* file);
 #elif question==5
 void stack(void);
 #elif question==6
-
+void class_test(void);
 #endif

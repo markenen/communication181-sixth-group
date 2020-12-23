@@ -289,21 +289,20 @@ void virus(const char* file)
 #elif question==5
 #include <iostream>
 #include <vector>
-
 typedef struct Point {
 	union 
 	{
-		int num;
+		double num;
 		char signal;
 	};
 	bool type;
 	Point* next;
 }point;
 typedef struct calc_temp {
-	int num;
+	double num;
 	char signal;
 	calc_temp* next;
-};
+}calc_t;
 void change_type(Point* p, char* str)
 {
 	Point* q = p;
@@ -344,12 +343,12 @@ void change_type(Point* p, char* str)
 			break;
 		default:
 			n = &num[0];
-			while (*str >= '0' && *str <= '9')
+			while ((*str >= '0' && *str <= '9')||*str=='.')
 			{
 				*n = *str;
 				n++; str++;
 			}
-			p->num = atoi(num);
+			p->num = atof(num);
 			p->type = true;
 			for (int i = 0; i < 10&&num[i]!='\0'; i++)
 			{
@@ -364,16 +363,17 @@ void change_type(Point* p, char* str)
 		p->next = NULL;
 	}
 }
-int calc(Point& p)
+double calc(Point& p)
 {
 	calc_temp data; data.next = NULL;
-	calc_temp* q = &data;
+	calc_temp* q = &data; calc_temp* del_flag;
 	while (true)
 	{
 		if (p.type==false)
 		{
 			if (p.signal == '(')
 			{
+				data.num;
 				q->num = calc(*(p.next));
 				p = *(p.next);
 			}
@@ -381,8 +381,7 @@ int calc(Point& p)
 			{
 				if (p.next != NULL)
 					p = *(p.next);
-				else
-					break;
+				break;
 			}
 			else
 			{
@@ -408,29 +407,34 @@ int calc(Point& p)
 		{
 			if (q->signal == '/')
 				q->num = q->num / q->next->num;
-			else
+			else if(q->signal == '*')
 				q->num = q->num * q->next->num;
 			if (q->next->signal != '\0')
 				q->signal = q->next->signal;
 			else
 				break;
+			del_flag = q->next;
 			q->next = q->next->next;
+			delete del_flag;
 		}
 		else
 			q = q->next;
 	}
-	*q = data;
+	q = &data;
 	while (q->next != NULL)
 	{
 		if (q->signal == '+')
 			q->num = q->num + q->next->num;
-		else
+		else if(q->signal == '-')
 			q->num = q->num - q->next->num;
+
 		if (q->next->signal != '\0')
 			q->signal = q->next->signal;
 		else
 			break;
+		del_flag = q->next;
 		q->next = q->next->next;
+		delete del_flag;
 	} 
 	return data.num;
 }
@@ -440,10 +444,130 @@ void stack(void)
 	Point* p = new Point;
 	p->next = NULL;
 	std::cin >> str;
-	str;
 	change_type(p, str);
 	std::cout<<calc(*p);
 }
 #elif question==6
+#include <iostream>
+struct vehicle_data
+{
+	uint16_t wheels;
+	double weight;
+};
+class vehicle
+{
+public:
+	vehicle();
+	vehicle(vehicle_data p);
+	void get_value(vehicle_data& p);
+protected:
+	void show_struct_value(vehicle_data p);
+	uint16_t wheels;
+	double weight;
+};
+vehicle::vehicle()
+{
+	weight = 0;
+	wheels = 0;
+}
+vehicle::vehicle(vehicle_data p)
+{
+	weight = p.weight;
+	wheels = p.wheels;
+}
+void vehicle::show_struct_value(vehicle_data p)
+{
+	std::cout << "重量为" << p.weight << std::endl;
+	std::cout << "车轮数为" << p.wheels << std::endl;
+}
+void vehicle::get_value(vehicle_data& p)
+{
+	p.weight = weight;
+	p.wheels = wheels;
+	std::cout << std::endl;
+	std::cout << "vehicle" << std::endl;
+	show_struct_value(p);
+}
 
+struct car_data
+{
+	vehicle_data base;
+	uint16_t passenger_load;
+};
+class car:private vehicle
+{
+public:
+	car(car_data p);
+	void get_value(car_data& p);
+private:
+	void show_struct_value(car_data p);
+	uint16_t passenger_load;
+};
+car::car(car_data p)
+{
+	passenger_load = p.passenger_load;
+	weight = p.base.weight;
+	wheels = p.base.wheels;
+}
+void car::show_struct_value(car_data p)
+{
+	std::cout << std::endl;
+	std::cout << "car" << std::endl;
+	std::cout << "乘车人数为" << p.passenger_load << std::endl;
+	vehicle::show_struct_value(p.base);
+}
+void car::get_value(car_data& p)
+{
+	p.passenger_load = passenger_load;
+	p.base.weight = weight;
+	p.base.wheels = wheels;
+	show_struct_value(p);
+}
+
+struct truck_data {
+	vehicle_data base;
+	uint16_t passenger_load;
+	double payload;
+};
+class truck:private vehicle
+{
+public:
+	truck(truck_data p);
+	void get_value(truck_data& p);
+private:
+	void show_struct_value(truck_data p);
+	uint16_t passenger_load;
+	double payload;
+};
+void truck::show_struct_value(truck_data p)
+{
+	std::cout << std::endl;
+	std::cout << "truck" << std::endl;
+	std::cout << "乘车人数为" << p.passenger_load << std::endl;
+	std::cout << "载重为" << p.payload << std::endl;
+	vehicle::show_struct_value(p.base);
+}
+truck::truck(truck_data p)
+{
+	passenger_load = p.passenger_load;
+	payload =p. payload;
+	weight =p.base. weight;
+	wheels =p. base.wheels;
+}
+void truck::get_value(truck_data& p)
+{
+	p.passenger_load=passenger_load;
+	p.payload=payload;
+	p.base.weight=weight;
+	p.base.wheels=wheels;
+	show_struct_value(p);
+}
+void class_test(void)
+{
+	vehicle_data p1_1 = { 8,8.0 },p1_2;
+	car_data p2_1 = { {4,5},4 },p2_2;
+	truck_data p3_1 = { {16,10},3,50 },p3_2;
+	vehicle V(p1_1); car C(p2_1); truck T(p3_1);
+	V.get_value(p1_2); C.get_value(p2_2); T.get_value(p3_2);
+}
 #endif 
