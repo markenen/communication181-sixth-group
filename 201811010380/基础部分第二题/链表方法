@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>  //由于到末尾需要从头开始，所以将数据存入成环的链表中，数数直到k，记录此时的p以及它的前一个结点pre，将p剔除环，并释放内存
 using namespace std;
 typedef struct node    //定义一个结点的结构体
 {
