@@ -1,0 +1,24 @@
+//第一题指针传参
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int fun(int &a,int &b,int *c);
+    int a,b,c;
+    cout<<"请输入一个整数A:";
+    cin>>a;
+    cout<<"请输入一个整数B:";
+    cin>>b;
+    fun(a,b,&c);//通过函数得到C的值
+    cout<<"得到整数C的值是:"<<c<<endl;
+    return 0;
+}
+int fun(int &a,int &b,int *c)
+{
+    int c1,c2,c3,c4; //分别对应千位十位百位个位
+    c1=a%10;         //实现a的个位是c的千位
+    c2=b/10;         //b的十位是c的百位
+    c3=a/10;         //a的十位是c的十位
+    c4=b%10;         //b的各位是c的各位
+    *c=c1*1000+c2*100+c3*10+c4;   //利用返回值传递参数
+}
