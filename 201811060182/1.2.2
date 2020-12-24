@@ -1,0 +1,57 @@
+//猴子选大王（链表实现）
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+typedef struct Node   //定义一个结点结构体
+{
+	int data;
+	struct Node* next;
+} Node,*Linklist;    
+//创建m个结点循环链表
+Linklist link_create(int m) 
+{
+	Linklist  p, q, head;
+	int i;
+	head = (Linklist)malloc(sizeof(Node));//建立头结点
+	p = head;
+	for (i = 1; i <= m; i++) //创建剩余结点
+	{
+		q = new Node;
+		q->data = i;
+		p->next = q;
+		p = q;
+	}
+	p->next = head->next; //最后一个结点指向头部，形成循环链表
+	return p->next;
+}
+void link_process(Linklist L, int n)//从编号为1开始报数，数到n的猴子出圈；
+{
+	int i = 1;
+	Linklist p, q;
+	p = L;
+	while (p->next != p)   //只要循环链表中不止一个结点时，一直做循环
+	{
+		i++;
+		if (i % n == 0)      // //依次报数，当为n的倍数时，删除结点 
+		{
+			q = p->next;
+			p->next = q->next;
+			delete p;    
+		}
+		else //若不是n的倍数，指针后移
+		{
+			p = p->next;
+		}
+	}
+	cout << "Monkey king is:" << p->data << endl;
+}
+int main()
+{
+	Linklist L;
+	int m, n;
+	cout << "Please enter m and n" << endl;
+	cin >> m >> n;   //输入m和n的值
+	L = link_create(m);
+	link_process(L, n);
+	return 0;
+}
