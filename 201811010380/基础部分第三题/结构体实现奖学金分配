@@ -1,0 +1,46 @@
+//结构体实现
+#include <iostream>
+using namespace std;
+struct student
+{
+	int sno; //学号
+	int score_C; //语文成绩
+	int score_M; //数学成绩
+	int score_E; //英语成绩
+	int sum; //总分
+};
+int main(void)
+{
+	student a[100];
+	int n;//n表示该校参加评选的学生人数
+	cout<<"请输入参加评选的人数："<<endl;
+	cin >> n;
+	cout<<"请输入参评学生的各科成绩："<<endl;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a[i].score_C >> a[i].score_M >> a[i].score_E; //输入学生的各科成绩
+		a[i].sno = i + 1;   //依次输入各位学生的各科成绩
+		a[i].sum = a[i].score_C + a[i].score_M + a[i].score_E; //计算总分
+	}
+cout<<"前五名同学的学号和总成绩为:"<<endl;
+for (int i = 0; i < n; i++)
+	{
+		int t = i;
+		int j = t + 1;
+		for (j; j < n; j++)    //根据总分高低先进行排序，分数高者j会存在中间变量t中，经过一轮循环就会出现分高者
+			if (a[j].sum > a[t].sum)
+				t = j;
+		if (t != i)
+			swap(a[i], a[t]);
+	}
+	for (int i = n - 1; i > 0; i--)
+	{
+		if ((a[i].sum == a[i - 1].sum && a[i].score_C > a[i - 1].score_C) ||
+			(a[i].sum == a[i - 1].sum && a[i].score_C == a[i - 1].score_C && a[i].sno < a[i - 1].sno))
+			swap(a[i], a[i - 1]); //保证总分相同时按语文成绩排，总成绩和语文成绩都相同时学号较小者优先
+	}
+for (int i = 0; i < 5; i++)
+        {
+		cout << a[i].sno << " " << a[i].sum << endl; } //得到前五名}
+		return 0;
+}
