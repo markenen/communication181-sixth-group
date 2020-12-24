@@ -1,0 +1,69 @@
+#include<iostream>
+#include<fstream>
+#include<vector> //利用vector动态存储数组元素
+void virus(const char* file) //利用文件出入处理字符串
+{
+	int lineage, column, cycle,number=0;
+	std::fstream fs(file, std::ios::in); //文件输入
+	fs >> lineage >> column;  //分别输入行和列
+	std::vector<char> map((lineage+1) * column); //利用变长数组读取文本时确保每读取一行刷新一行
+	char* p = &map[0];    
+	fs.get();
+	for (int i = 0; i < (lineage+1)*column; i++)
+	{
+		fs.get(*p);
+		p++;
+	}
+	fs>>cycle;    //开始第一轮感染
+	fs.close();
+	std::vector<int> loc((lineage + 1) * column);  //创建变长数组存储感染结果
+	int* p_l = &loc[0];   
+	for (int i = 0; i < (lineage+1)*column; i++)
+	{
+		if (map[i] == 'X')
+		{
+			*p_l = i;   //记录感染病毒以后的位置
+			number++;   //记录感染数量
+		}
+	}
+
+	for (int i = 0; i < cycle; i++)
+	{
+		p_l = &loc[0];
+		for (int j = 0; j < number; j++) 
+		{
+			if ((p_l[j] - lineage) >= 0 && map[loc[j] - lineage] == 'O')
+				map[loc[j] - lineage - 1] = 'X';
+			if ((loc[j] + lineage) < ((lineage + 1) * column - 1) && map[loc[j] + lineage] == 'O')
+				map[loc[j] + lineage + 1] = 'X';
+			if ((loc[j] + 1) < ((lineage + 1) * column - 1) && map[loc[j] + 1] != '\0' && map[loc[j] + 1] == 'O')
+					map[loc[j] + 1] = 'X';
+			if ((loc[j] - 1) >= 0 && map[loc[j] - 1] != '\0' && map[loc[j] - 1] == 'O')
+				map[loc[j] - 1] = 'X';
+		}
+		number = 0;  //开始第二轮感染
+		for (int i = 0; i < (lineage + 1) * column; i++)
+		{
+			if (map[i]== 'X')
+				number++;
+		}
+		p_l = &loc[0];
+		for (int i = 0; i < (lineage + 1) * column; i++)
+		{
+			if (map[i] == 'X')
+			{
+				*p_l = i;
+				p_l++;
+			}
+		}
+	}
+	for (int i = 0; i < (lineage+1)*column; i++)
+	{
+		std::cout << map[i]; //输出处理后的文本
+	}
+}
+int main(void)
+{
+    const char* file = "E:/map.txt";
+	virus(file);
+}
