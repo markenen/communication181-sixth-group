@@ -1,0 +1,37 @@
+//奖学金
+#include <iostream>
+using namespace std;
+struct student 
+{
+	int sno; //学号
+	int score_C; //语文成绩
+	int score_M; //数学成绩
+	int score_E; //英语成绩
+	int sum; //总分
+};
+void main() 
+{
+	student a[100];
+	int n; //n表示该校参加评选的学生人数
+	cin >> n;
+	for (int i = 0; i < n; i++) 
+	{
+		cin >> a[i].score_C >> a[i].score_M >> a[i].score_E;
+		a[i].sno = i + 1;
+		a[i].sum = a[i].score_C + a[i].score_M + a[i].score_E;
+	}
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            if (a[i].sum < a[j].sum)    //比较成绩大小
+                swap(a[i], a[j]);       //交换排名
+            else if (a[i].sum == a[j].sum && a[i].score_C < a[j].score_C)   //比较语文成绩大小
+				swap(a[i], a[j]);
+            else if (a[i].sum == a[j].sum && a[i].score_C == a[j].score_C && a[i].sno > a[j].sno)   //比较学号大小
+				swap(a[i], a[j]);  
+        }
+    }
+	for (int i = 0; i < 5; i++) 
+		cout << a[i].sno << " " << a[i].sum << endl;
+}
