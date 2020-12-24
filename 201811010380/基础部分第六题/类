@@ -1,0 +1,89 @@
+#include <iostream>
+using namespace std;
+class vehicle //汽车类
+{
+protected:
+	int wheels; //车轮个数
+	float weight; //车重
+public:
+	vehicle();
+	void SetVehicle();
+	void DisplayVehicle();
+};
+vehicle::vehicle()
+{
+	SetVehicle(); 
+}
+void vehicle::SetVehicle()
+{
+	cout << "请输入车轮数:";
+	cin >> wheels;
+	cout << "请输入车重:";
+	cin >> weight;
+}
+void vehicle::DisplayVehicle()
+{
+	cout << "车轮数:" << wheels << " , " << "车重:" << weight << endl;
+}
+class car : private vehicle //小车类
+{
+private:
+	int passenger_load; //载人数
+public:
+	car();
+	void SetPassenger_load();
+	void DisplayCar();
+};
+car::car()
+{
+	SetPassenger_load();
+}
+void car::SetPassenger_load()
+{
+	cout << "请输入载人数:";
+	cin >> passenger_load;
+}
+void car::DisplayCar()
+{
+	cout << "小车类:" << endl;
+	DisplayVehicle();
+	cout << "载人数:" << passenger_load << endl;
+}
+class truck : private vehicle //卡车类
+{
+private:
+	int passenger_load; //载人数
+	float payload; //载重量
+public:
+	truck();
+	void Setpayload();
+	void Displaytruck();
+};
+truck::truck()
+{
+	Setpayload();
+}
+void truck::Setpayload()
+{
+	cout << "请输入载人数:";
+	cin >> passenger_load;
+	cout << "请输入载重量:";
+	cin >> payload;
+}
+void truck::Displaytruck()
+{
+	cout << "卡车类:" << endl;
+	DisplayVehicle();
+	cout << "载人数:" << passenger_load << " , " << "载重量:" << payload << endl;
+}
+void main()
+{
+	cout << "请输入小车类信息:" << endl;
+	car c;
+	cout << "请输入卡车类信息:" << endl;
+	truck t;
+	cout << endl;
+	c.DisplayCar();
+	cout << endl;
+	t.Displaytruck();
+}
