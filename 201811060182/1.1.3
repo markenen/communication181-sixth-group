@@ -1,0 +1,25 @@
+//通过指针型参数将新数传给主函数
+#include <iostream>
+using namespace std;
+int main()
+{
+	int fun(int a, int b,int *c);
+	int a, b, c;
+	cout << "Please enter a number a:" << endl;
+	cin >> a; //接收正整数a 
+	cout << "Please enter a number b:" << endl;
+	cin >> b; //接收正整数b 
+	fun(a, b, &c); //调用fun函数
+	cout << "The number c is " << c; //输出正整数c 
+	return 0;
+}
+int fun(int a, int b, int *c)
+{
+	int th, h, t, u; //th、h、t、u分别对应c的千位、百位、十位、个位 
+	th = a % 10;
+	h = b / 10;
+	t = a / 10;
+	u = b % 10;
+	*c = (th * 1000 + h * 100 + t * 10 + u);
+	return 0;
+}
