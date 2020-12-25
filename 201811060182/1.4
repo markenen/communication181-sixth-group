@@ -1,0 +1,62 @@
+//字符串问题
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a[100][100]; //定义二维字符数组
+    int M, N;
+    cin >> N >> M; //输入行和列
+    //输入初始N*M矩阵
+    for (int i = 0; i <M; i ++)
+    {
+        for (int j = 0; j < N; j ++)
+        {
+            cin >> a[i][j];
+        }
+    }
+    int C;  //病毒周期
+    cin >> C;
+    while(C)
+    {
+        for (int i = 0; i < M; i ++)
+        {
+            for (int j = 0; j < N; j ++)
+
+            {
+                //找到被感染区域“X”，若其上、下、左、右四个方向上的区域分别无被保护区域及被感染区域，将其上、下、左、右四个方向上的区域分别用大写字母“Y”表示，避免多算上新的被感染区域
+                if (a[i][j] == 'X')
+                {
+                    if (a[i + 1][j] != 'P' && a[i + 1][j] != 'X') 
+                        a[i + 1][j] = 'Y';
+                    if (a[i - 1][j] != 'P' && a[i + 1][j] != 'X')
+                        a[i - 1][j] = 'Y';
+                    if (a[i][j + 1] != 'P' && a[i + 1][j] != 'X')
+                        a[i][j + 1] = 'Y';
+                    if (a[i][j - 1] != 'P' && a[i + 1][j] != 'X')
+                        a[i][j - 1] = 'Y';
+                }
+            }
+        }
+        for (int i = 0; i < M; i ++) //一个病毒周期后，将用“Y”表示新的被感染区域赋值为用“X”表示
+        {
+            for (int j = 0; j < N; j ++)
+            {
+                if (a[i][j] == 'Y')
+                {
+                    a[i][j] = 'X';
+                }
+            }
+        }
+        C --;
+    }
+    //输出经历了C个病毒周期过后新的感染N*M矩阵
+    for (int i = 0; i < M; i ++)
+    {
+        for (int j = 0; j < N; j ++)
+        {
+            cout << a[i][j];
+        }
+        cout << endl;
+    }
+    return 0;
+}
