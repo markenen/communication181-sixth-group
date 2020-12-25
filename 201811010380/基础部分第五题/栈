@@ -1,0 +1,161 @@
+#include <iostream>
+#include<stdlib.h>
+struct Point {  //如果加上typedef会出现警告
+	union
+	{
+		int num;
+		char symbol;
+	};
+	bool type;
+	Point* next;
+}point;
+struct calc_temp {
+	int num;
+	char symbol;
+	calc_temp* next;
+};
+void change_type(Point* p, char* str)
+{
+	Point* q = p;
+	char num[10] = { '\0' }; char* n = &num[0];
+	while (true)
+	{
+		switch (*str)
+		{
+		case '+':
+			p->symbol = *str;
+			str++;
+			p->type = false;
+			break;
+		case '-':
+			p->symbol = *str;
+			str++;
+			p->type = false;
+			break;
+		case '*':
+			p->symbol = *str;
+			str++;
+			p->type = false;
+			break;
+		case '/':
+			p->symbol = *str;
+			str++;
+			p->type = false;
+			break;
+		case '(':
+			p->symbol = *str;
+			str++;
+			p->type = false;
+			break;
+		case ')':
+			p->symbol = *str;
+			str++;
+			p->type = false;
+			break;
+		default:
+			n = &num[0];
+			while (*str >= '0' && *str <= '9')
+			{
+				*n = *str;
+				n++; str++;
+			}
+			p->num = atoi(num);
+			p->type = true;
+			for (int i = 0; i < 10&&num[i]!='\0'; i++)
+			{
+				num[i] = '\0';
+			}
+			break;
+		}
+		if (*str=='\0')
+			break;
+		p->next = new Point;
+		p = p->next;
+		p->next = NULL;
+	}
+}
+int calc(Point& p)
+{
+	calc_temp data; data.next = NULL;
+	calc_temp* q = &data;
+	while (true)
+	{
+		if (p.type==false)
+		{
+			if (p.symbol == '(')
+			{
+				q->num = calc(*(p.next));
+				p = *(p.next);
+			}
+			else if (p.symbol == ')')
+			{
+				if (p.next != NULL)
+					p = *(p.next);
+				else
+					break;
+			}
+			else
+			{
+				q->symbol = p.symbol;
+				q->next = new calc_temp;
+				q = q->next; q->next = NULL; q->symbol = '\0';
+				p = *(p.next);
+			}
+		}
+		else
+		{
+			q->num = p.num;
+			if (p.next != NULL)
+				p = *(p.next);
+			else
+				break;
+		}
+	}
+	q = &data;
+	while (q->next != NULL)
+	{
+		if (q->symbol == '/' || q->symbol == '*')
+		{
+			if (q->symbol == '/')
+				q->num = q->num / q->next->num;
+			else
+				q->num = q->num * q->next->num;
+			if (q->next->symbol != '\0')
+				q->symbol = q->next->symbol;
+			else
+				break;
+			q->next = q->next->next;
+		}
+		else
+			q = q->next;
+	}
+	*q = data;
+	while (q->next != NULL)
+	{
+		if (q->symbol == '+')
+			q->num = q->num + q->next->num;
+		else
+			q->num = q->num - q->next->num;
+		if (q->next->symbol != '\0')
+			q->symbol = q->next->symbol;
+		else
+			break;
+		q->next = q->next->next;
+	}
+	return data.num;
+}
+void stack(void)
+{
+	char str[100] = { '\0' };
+	Point* p = new Point;
+	p->next = NULL;
+	std::cin >> str;
+	str;
+	change_type(p, str);
+	std::cout<<calc(*p);
+}
+
+int main(void)
+{
+    stack();
+}
