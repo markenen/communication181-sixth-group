@@ -1,0 +1,1656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="menu_admin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 9</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menu_admin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menu_admin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1904, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menu_admin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menu_admin.Text" xml:space="preserve">
+    <value>菜单栏</value>
+  </data>
+  <data name="&gt;&gt;menu_admin.Name" xml:space="preserve">
+    <value>menu_admin</value>
+  </data>
+  <data name="&gt;&gt;menu_admin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menu_admin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menu_admin.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="mange_basic_inf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="mange_basic_inf.Text" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="new_basic_inf_entry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="new_basic_inf_entry.Text" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="modif_basic_inf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="modif_basic_inf.Text" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="batch_basic_inf_entry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="batch_basic_inf_entry.Text" xml:space="preserve">
+    <value>批量新增</value>
+  </data>
+  <data name="finance_inf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="finance_inf.Text" xml:space="preserve">
+    <value>财务</value>
+  </data>
+  <data name="finance_single_entry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="finance_single_entry.Text" xml:space="preserve">
+    <value>单项录入</value>
+  </data>
+  <data name="finance_batch_entry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="finance_batch_entry.Text" xml:space="preserve">
+    <value>批量录入</value>
+  </data>
+  <data name="look_up_data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="look_up_data.Text" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="look_uo_id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="look_uo_id.Text" xml:space="preserve">
+    <value>教师号查询</value>
+  </data>
+  <data name="look_up_all.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="look_up_all.Text" xml:space="preserve">
+    <value>综合查询</value>
+  </data>
+  <data name="logout_system.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="logout_system.Text" xml:space="preserve">
+    <value>退出系统</value>
+  </data>
+  <data name="id.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 54</value>
+  </data>
+  <data name="id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="id.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="id.Text" xml:space="preserve">
+    <value>教师号</value>
+  </data>
+  <data name="id.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;id.Name" xml:space="preserve">
+    <value>id</value>
+  </data>
+  <data name="&gt;&gt;id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;id.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 81</value>
+  </data>
+  <data name="name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="name.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="name.Text" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="name.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;name.Name" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="&gt;&gt;name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;name.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;name.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="sex.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 108</value>
+  </data>
+  <data name="sex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="sex.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="sex.Text" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="sex.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;sex.Name" xml:space="preserve">
+    <value>sex</value>
+  </data>
+  <data name="&gt;&gt;sex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sex.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sex.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="organization.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="organization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 137</value>
+  </data>
+  <data name="organization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="organization.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="organization.Text" xml:space="preserve">
+    <value>单位名称</value>
+  </data>
+  <data name="organization.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;organization.Name" xml:space="preserve">
+    <value>organization</value>
+  </data>
+  <data name="&gt;&gt;organization.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;organization.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;organization.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="address.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="address.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 162</value>
+  </data>
+  <data name="address.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="address.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="address.Text" xml:space="preserve">
+    <value>家庭住址</value>
+  </data>
+  <data name="address.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;address.Name" xml:space="preserve">
+    <value>address</value>
+  </data>
+  <data name="&gt;&gt;address.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;address.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;address.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="telephone.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="telephone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 219</value>
+  </data>
+  <data name="telephone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="telephone.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="telephone.Text" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="telephone.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;telephone.Name" xml:space="preserve">
+    <value>telephone</value>
+  </data>
+  <data name="&gt;&gt;telephone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telephone.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;telephone.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="base_pay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="base_pay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 246</value>
+  </data>
+  <data name="base_pay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="base_pay.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="base_pay.Text" xml:space="preserve">
+    <value>基本工资</value>
+  </data>
+  <data name="base_pay.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;base_pay.Name" xml:space="preserve">
+    <value>base_pay</value>
+  </data>
+  <data name="&gt;&gt;base_pay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;base_pay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;base_pay.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="allowance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="allowance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 273</value>
+  </data>
+  <data name="allowance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="allowance.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="allowance.Text" xml:space="preserve">
+    <value>津贴</value>
+  </data>
+  <data name="allowance.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;allowance.Name" xml:space="preserve">
+    <value>allowance</value>
+  </data>
+  <data name="&gt;&gt;allowance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;allowance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;allowance.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="subsistence_allowance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="subsistence_allowance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 300</value>
+  </data>
+  <data name="subsistence_allowance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="subsistence_allowance.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="subsistence_allowance.Text" xml:space="preserve">
+    <value>生活补贴</value>
+  </data>
+  <data name="subsistence_allowance.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance.Name" xml:space="preserve">
+    <value>subsistence_allowance</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="telephone_bill.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="telephone_bill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 328</value>
+  </data>
+  <data name="telephone_bill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="telephone_bill.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="telephone_bill.Text" xml:space="preserve">
+    <value>电话费</value>
+  </data>
+  <data name="telephone_bill.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill.Name" xml:space="preserve">
+    <value>telephone_bill</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="water_electricity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="water_electricity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 355</value>
+  </data>
+  <data name="water_electricity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="water_electricity.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="water_electricity.Text" xml:space="preserve">
+    <value>水电费</value>
+  </data>
+  <data name="water_electricity.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;water_electricity.Name" xml:space="preserve">
+    <value>water_electricity</value>
+  </data>
+  <data name="&gt;&gt;water_electricity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;water_electricity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;water_electricity.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="the_rent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="the_rent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 383</value>
+  </data>
+  <data name="the_rent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="the_rent.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="the_rent.Text" xml:space="preserve">
+    <value>房租</value>
+  </data>
+  <data name="the_rent.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;the_rent.Name" xml:space="preserve">
+    <value>the_rent</value>
+  </data>
+  <data name="&gt;&gt;the_rent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;the_rent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;the_rent.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="income_tax.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="income_tax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 409</value>
+  </data>
+  <data name="income_tax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="income_tax.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="income_tax.Text" xml:space="preserve">
+    <value>所得税</value>
+  </data>
+  <data name="income_tax.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;income_tax.Name" xml:space="preserve">
+    <value>income_tax</value>
+  </data>
+  <data name="&gt;&gt;income_tax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;income_tax.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;income_tax.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="sanitation_fee.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sanitation_fee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 439</value>
+  </data>
+  <data name="sanitation_fee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="sanitation_fee.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="sanitation_fee.Text" xml:space="preserve">
+    <value>卫生费</value>
+  </data>
+  <data name="sanitation_fee.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee.Name" xml:space="preserve">
+    <value>sanitation_fee</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="accumulation_fund.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="accumulation_fund.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 463</value>
+  </data>
+  <data name="accumulation_fund.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="accumulation_fund.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="accumulation_fund.Text" xml:space="preserve">
+    <value>公积金</value>
+  </data>
+  <data name="accumulation_fund.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund.Name" xml:space="preserve">
+    <value>accumulation_fund</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="id_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 51</value>
+  </data>
+  <data name="id_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="id_input.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="id_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;id_input.Name" xml:space="preserve">
+    <value>id_input</value>
+  </data>
+  <data name="&gt;&gt;id_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;id_input.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="name_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 78</value>
+  </data>
+  <data name="name_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="name_input.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="name_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;name_input.Name" xml:space="preserve">
+    <value>name_input</value>
+  </data>
+  <data name="&gt;&gt;name_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;name_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;name_input.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="organization_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 134</value>
+  </data>
+  <data name="organization_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="organization_input.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="organization_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;organization_input.Name" xml:space="preserve">
+    <value>organization_input</value>
+  </data>
+  <data name="&gt;&gt;organization_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;organization_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;organization_input.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="telephone_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 216</value>
+  </data>
+  <data name="telephone_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="telephone_input.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="telephone_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;telephone_input.Name" xml:space="preserve">
+    <value>telephone_input</value>
+  </data>
+  <data name="&gt;&gt;telephone_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telephone_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;telephone_input.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="base_pay_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 243</value>
+  </data>
+  <data name="base_pay_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="base_pay_input.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="base_pay_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;base_pay_input.Name" xml:space="preserve">
+    <value>base_pay_input</value>
+  </data>
+  <data name="&gt;&gt;base_pay_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;base_pay_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;base_pay_input.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="allowance_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 270</value>
+  </data>
+  <data name="allowance_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="allowance_input.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="allowance_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;allowance_input.Name" xml:space="preserve">
+    <value>allowance_input</value>
+  </data>
+  <data name="&gt;&gt;allowance_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;allowance_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;allowance_input.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="subsistence_allowance_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 297</value>
+  </data>
+  <data name="subsistence_allowance_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="subsistence_allowance_input.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="subsistence_allowance_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance_input.Name" xml:space="preserve">
+    <value>subsistence_allowance_input</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;subsistence_allowance_input.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="telephone_bill_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 325</value>
+  </data>
+  <data name="telephone_bill_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="telephone_bill_input.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="telephone_bill_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill_input.Name" xml:space="preserve">
+    <value>telephone_bill_input</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;telephone_bill_input.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="water_electricity_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 352</value>
+  </data>
+  <data name="water_electricity_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="water_electricity_input.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="water_electricity_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;water_electricity_input.Name" xml:space="preserve">
+    <value>water_electricity_input</value>
+  </data>
+  <data name="&gt;&gt;water_electricity_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;water_electricity_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;water_electricity_input.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="the_rent_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 379</value>
+  </data>
+  <data name="the_rent_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="the_rent_input.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="the_rent_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;the_rent_input.Name" xml:space="preserve">
+    <value>the_rent_input</value>
+  </data>
+  <data name="&gt;&gt;the_rent_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;the_rent_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;the_rent_input.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="income_tax_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 406</value>
+  </data>
+  <data name="income_tax_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="income_tax_input.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="income_tax_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;income_tax_input.Name" xml:space="preserve">
+    <value>income_tax_input</value>
+  </data>
+  <data name="&gt;&gt;income_tax_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;income_tax_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;income_tax_input.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="sanitation_fee_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 433</value>
+  </data>
+  <data name="sanitation_fee_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="sanitation_fee_input.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="sanitation_fee_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee_input.Name" xml:space="preserve">
+    <value>sanitation_fee_input</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sanitation_fee_input.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="accumulation_fund_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 460</value>
+  </data>
+  <data name="accumulation_fund_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="accumulation_fund_input.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="accumulation_fund_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund_input.Name" xml:space="preserve">
+    <value>accumulation_fund_input</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;accumulation_fund_input.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="salary.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="salary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 246</value>
+  </data>
+  <data name="salary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="salary.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="salary.Text" xml:space="preserve">
+    <value>应发工资</value>
+  </data>
+  <data name="salary.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;salary.Name" xml:space="preserve">
+    <value>salary</value>
+  </data>
+  <data name="&gt;&gt;salary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salary.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;salary.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="salary_show.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="salary_show.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 246</value>
+  </data>
+  <data name="salary_show.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 12</value>
+  </data>
+  <data name="salary_show.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="salary_show.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;salary_show.Name" xml:space="preserve">
+    <value>salary_show</value>
+  </data>
+  <data name="&gt;&gt;salary_show.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salary_show.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;salary_show.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="aggregate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="aggregate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 273</value>
+  </data>
+  <data name="aggregate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="aggregate.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="aggregate.Text" xml:space="preserve">
+    <value>合计扣款</value>
+  </data>
+  <data name="aggregate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;aggregate.Name" xml:space="preserve">
+    <value>aggregate</value>
+  </data>
+  <data name="&gt;&gt;aggregate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aggregate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aggregate.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="aggregate_show.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="aggregate_show.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 273</value>
+  </data>
+  <data name="aggregate_show.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 12</value>
+  </data>
+  <data name="aggregate_show.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="aggregate_show.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;aggregate_show.Name" xml:space="preserve">
+    <value>aggregate_show</value>
+  </data>
+  <data name="&gt;&gt;aggregate_show.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aggregate_show.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aggregate_show.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="payroll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="payroll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 300</value>
+  </data>
+  <data name="payroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="payroll.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="payroll.Text" xml:space="preserve">
+    <value>实发工资</value>
+  </data>
+  <data name="payroll.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;payroll.Name" xml:space="preserve">
+    <value>payroll</value>
+  </data>
+  <data name="&gt;&gt;payroll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;payroll.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;payroll.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="payroll_show.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="payroll_show.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 300</value>
+  </data>
+  <data name="payroll_show.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 12</value>
+  </data>
+  <data name="payroll_show.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="payroll_show.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;payroll_show.Name" xml:space="preserve">
+    <value>payroll_show</value>
+  </data>
+  <data name="&gt;&gt;payroll_show.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;payroll_show.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;payroll_show.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="calc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 350</value>
+  </data>
+  <data name="calc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="calc.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="calc.Text" xml:space="preserve">
+    <value>计算</value>
+  </data>
+  <data name="calc.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;calc.Name" xml:space="preserve">
+    <value>calc</value>
+  </data>
+  <data name="&gt;&gt;calc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;calc.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="submit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 515</value>
+  </data>
+  <data name="submit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="submit.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="submit.Text" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="submit.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;submit.Name" xml:space="preserve">
+    <value>submit</value>
+  </data>
+  <data name="&gt;&gt;submit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;submit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;submit.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="sex_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 108</value>
+  </data>
+  <data name="sex_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="sex_input.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="sex_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;sex_input.Name" xml:space="preserve">
+    <value>sex_input</value>
+  </data>
+  <data name="&gt;&gt;sex_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sex_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sex_input.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="address_province_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 162</value>
+  </data>
+  <data name="address_province_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="address_province_input.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="address_province_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;address_province_input.Name" xml:space="preserve">
+    <value>address_province_input</value>
+  </data>
+  <data name="&gt;&gt;address_province_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;address_province_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;address_province_input.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="address_city_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 162</value>
+  </data>
+  <data name="address_city_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="address_city_input.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="address_city_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;address_city_input.Name" xml:space="preserve">
+    <value>address_city_input</value>
+  </data>
+  <data name="&gt;&gt;address_city_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;address_city_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;address_city_input.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="address_county_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 162</value>
+  </data>
+  <data name="address_county_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="address_county_input.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="address_county_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;address_county_input.Name" xml:space="preserve">
+    <value>address_county_input</value>
+  </data>
+  <data name="&gt;&gt;address_county_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;address_county_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;address_county_input.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="address_detailed_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 189</value>
+  </data>
+  <data name="address_detailed_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 21</value>
+  </data>
+  <data name="address_detailed_input.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="address_detailed_input.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;address_detailed_input.Name" xml:space="preserve">
+    <value>address_detailed_input</value>
+  </data>
+  <data name="&gt;&gt;address_detailed_input.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;address_detailed_input.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;address_detailed_input.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="inquire_basic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 49</value>
+  </data>
+  <data name="inquire_basic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="inquire_basic.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="inquire_basic.Text" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="inquire_basic.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;inquire_basic.Name" xml:space="preserve">
+    <value>inquire_basic</value>
+  </data>
+  <data name="&gt;&gt;inquire_basic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inquire_basic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inquire_basic.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="change_submit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 377</value>
+  </data>
+  <data name="change_submit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="change_submit.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="change_submit.Text" xml:space="preserve">
+    <value>提交修改</value>
+  </data>
+  <data name="change_submit.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;change_submit.Name" xml:space="preserve">
+    <value>change_submit</value>
+  </data>
+  <data name="&gt;&gt;change_submit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;change_submit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;change_submit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="submit_new.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 261</value>
+  </data>
+  <data name="submit_new.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="submit_new.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="submit_new.Text" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="submit_new.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;submit_new.Name" xml:space="preserve">
+    <value>submit_new</value>
+  </data>
+  <data name="&gt;&gt;submit_new.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;submit_new.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;submit_new.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="modif_inf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 261</value>
+  </data>
+  <data name="modif_inf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="modif_inf.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="modif_inf.Text" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="modif_inf.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;modif_inf.Name" xml:space="preserve">
+    <value>modif_inf</value>
+  </data>
+  <data name="&gt;&gt;modif_inf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modif_inf.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;modif_inf.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="del_inf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 261</value>
+  </data>
+  <data name="del_inf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="del_inf.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="del_inf.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="del_inf.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;del_inf.Name" xml:space="preserve">
+    <value>del_inf</value>
+  </data>
+  <data name="&gt;&gt;del_inf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;del_inf.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;del_inf.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="inquire_finance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 49</value>
+  </data>
+  <data name="inquire_finance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="inquire_finance.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="inquire_finance.Text" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="inquire_finance.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;inquire_finance.Name" xml:space="preserve">
+    <value>inquire_finance</value>
+  </data>
+  <data name="&gt;&gt;inquire_finance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inquire_finance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inquire_finance.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="inquire_look.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 49</value>
+  </data>
+  <data name="inquire_look.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="inquire_look.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="inquire_look.Text" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="inquire_look.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;inquire_look.Name" xml:space="preserve">
+    <value>inquire_look</value>
+  </data>
+  <data name="&gt;&gt;inquire_look.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inquire_look.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inquire_look.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="up_inf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 515</value>
+  </data>
+  <data name="up_inf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="up_inf.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="up_inf.Text" xml:space="preserve">
+    <value>上一个</value>
+  </data>
+  <data name="up_inf.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;up_inf.Name" xml:space="preserve">
+    <value>up_inf</value>
+  </data>
+  <data name="&gt;&gt;up_inf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;up_inf.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;up_inf.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bot_inf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 515</value>
+  </data>
+  <data name="bot_inf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bot_inf.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="bot_inf.Text" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="bot_inf.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;bot_inf.Name" xml:space="preserve">
+    <value>bot_inf</value>
+  </data>
+  <data name="&gt;&gt;bot_inf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bot_inf.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bot_inf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1904, 1041</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>教师工资管理系统</value>
+  </data>
+  <data name="&gt;&gt;mange_basic_inf.Name" xml:space="preserve">
+    <value>mange_basic_inf</value>
+  </data>
+  <data name="&gt;&gt;mange_basic_inf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;new_basic_inf_entry.Name" xml:space="preserve">
+    <value>new_basic_inf_entry</value>
+  </data>
+  <data name="&gt;&gt;new_basic_inf_entry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modif_basic_inf.Name" xml:space="preserve">
+    <value>modif_basic_inf</value>
+  </data>
+  <data name="&gt;&gt;modif_basic_inf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;batch_basic_inf_entry.Name" xml:space="preserve">
+    <value>batch_basic_inf_entry</value>
+  </data>
+  <data name="&gt;&gt;batch_basic_inf_entry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finance_inf.Name" xml:space="preserve">
+    <value>finance_inf</value>
+  </data>
+  <data name="&gt;&gt;finance_inf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finance_single_entry.Name" xml:space="preserve">
+    <value>finance_single_entry</value>
+  </data>
+  <data name="&gt;&gt;finance_single_entry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finance_batch_entry.Name" xml:space="preserve">
+    <value>finance_batch_entry</value>
+  </data>
+  <data name="&gt;&gt;finance_batch_entry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;look_up_data.Name" xml:space="preserve">
+    <value>look_up_data</value>
+  </data>
+  <data name="&gt;&gt;look_up_data.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;look_uo_id.Name" xml:space="preserve">
+    <value>look_uo_id</value>
+  </data>
+  <data name="&gt;&gt;look_uo_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;look_up_all.Name" xml:space="preserve">
+    <value>look_up_all</value>
+  </data>
+  <data name="&gt;&gt;look_up_all.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logout_system.Name" xml:space="preserve">
+    <value>logout_system</value>
+  </data>
+  <data name="&gt;&gt;logout_system.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>admin_windows</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
