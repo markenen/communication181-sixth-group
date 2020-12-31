@@ -1,22 +1,38 @@
 #include<iostream>
 using namespace std;
-int main(void)
+int  fun0(int a, int b)
 {
-    int fun(int a, int b);
-    int a, b, c;
-    cout << "请输入两个两位数; ";
-    cin >> a;
-    cin >> b;
-    c = fun(a, b);
-    cout << "得到整数: " << c;
-    return 0;
+
+	int c;
+	c = a % 10 * 1000 + b % 10 * 100 + a / 10 * 10 + b / 10;
+	return c;
+
 }
-int fun(int a, int b)
+int  fun1(int& a, int& b, int& c)
 {
-    int c1, c2, c3, c4; 
-    c1 = a % 10;
-    c2 = b / 10;
-    c3 = a / 10;
-    c4 = b % 10;
-    return(c1 * 1000 + c2 * 100 + c3 * 10 + c4);
+
+	c = a % 10 * 1000 + b % 10 * 100 + a / 10 * 10 + b / 10;
+	return 0;
+
+}
+int  fun2(int* a, int* b, int* c)
+{
+
+	*c = *a % 10 * 1000 + *b % 10 * 100 + *a / 10 * 10 + *b / 10;
+	return 0;
+
+}
+int main()
+{
+
+	int a, b, c1, c2, c3;
+	cout << "输入A和B两个正整数: " << endl;
+	cin >> a >> b;
+	c1 = fun0(a, b);
+	cout << "得到整数: " << c1 << endl;
+	fun1(a, b, c2);
+	cout << "得到整数: " << c2 << endl;
+	fun2(&a, &b, &c3);
+	cout << "得到整数: " << c3 << endl;
+
 }
