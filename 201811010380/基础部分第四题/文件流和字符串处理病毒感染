@@ -4,51 +4,51 @@
 void virus(const char* file) //利用文件出入处理字符串
 {
 	int lineage, column, cycle,number=0;
-	std::fstream fs(file, std::ios::in); //文件输入
-	fs >> lineage >> column;  //分别输入行和列
-	std::vector<char> map((lineage+1) * column); //利用变长数组读取文本时确保每读取一行刷新一行
-	char* p = &map[0];    
+	std::fstream fs(file, std::ios::in);
+	fs >> lineage >> column; //lineage代表行数，age代表列的位置
+	std::vector<char> map((lineage+1) * column); //定义变长数组，每一行包含一个回车
+	char* p = &map[0];    //指针指向字符数组的首地址
 	fs.get();
-	for (int i = 0; i < (lineage+1)*column; i++)
+	for (int i = 0; i < (lineage+1)*column; i++) //通过文件流读取数据
 	{
 		fs.get(*p);
 		p++;
 	}
-	fs>>cycle;    //开始第一轮感染
+	fs>>cycle;
 	fs.close();
-	std::vector<int> loc((lineage + 1) * column);  //创建变长数组存储感染结果
-	int* p_l = &loc[0];   
+	std::vector<int> loc((lineage + 1) * column); //定义地址数组，loc用来存储病毒的坐标
+	int* p_l = &loc[0]; //地址数组的指针
 	for (int i = 0; i < (lineage+1)*column; i++)
 	{
-		if (map[i] == 'X')
+		if (map[i] == 'X')  //计数并判断病毒所在位置
 		{
-			*p_l = i;   //记录感染病毒以后的位置
-			number++;   //记录感染数量
+			*p_l = i;
+			number++;
 		}
 	}
 
-	for (int i = 0; i < cycle; i++)
+	for (int i = 0; i < cycle; i++)   //按照周期开始感染，经过循环可以得到病毒的地址，利用j表示病毒的序号
 	{
 		p_l = &loc[0];
-		for (int j = 0; j < number; j++) 
+		for (int j = 0; j < number; j++)   //通过感染一个周期，将病毒周围的的上下左右进行感染，j表示第几个病毒
 		{
-			if ((p_l[j] - lineage) >= 0 && map[loc[j] - lineage] == 'O')
-				map[loc[j] - lineage - 1] = 'X';
-			if ((loc[j] + lineage) < ((lineage + 1) * column - 1) && map[loc[j] + lineage] == 'O')
-				map[loc[j] + lineage + 1] = 'X';
-			if ((loc[j] + 1) < ((lineage + 1) * column - 1) && map[loc[j] + 1] != '\0' && map[loc[j] + 1] == 'O')
-					map[loc[j] + 1] = 'X';
-			if ((loc[j] - 1) >= 0 && map[loc[j] - 1] != '\0' && map[loc[j] - 1] == 'O')
-				map[loc[j] - 1] = 'X';
+			if ((loc[j] - lineage) >= 0 && map[loc[j] - lineage] == 'O')  //loc代表病毒所在的地址，如果loc与lineaage之差小于零代表病毒所在的位置已经是第一行，病毒感染上层元素的条件为自身不为第一行且上层元素处于未被感染的状态
+				map[loc[j] - lineage - 1] = 'X'; //病毒所在上方元素被感染
+			if ((loc[j] + lineage) < ((lineage + 1) * column ) && map[loc[j] + lineage] == 'O') //若病毒所在的下方的位置能被感染，则病毒必不在整个地图的最后一行，即lineage+1后不能超出地图的边界而且下方元素处于未感染状态
+				map[loc[j] + lineage + 1] = 'X';  //病毒所在的下方元素被感染
+			if ((loc[j] + 1) < ((lineage + 1) * column) && map[loc[j] + 1] != '\0' && map[loc[j] + 1] == 'O') //若病毒所在的右侧位置能感染，则病毒必不能在map的边界，不能在每一行的边界（右边必须有元素），而且右侧的元素必须处于未感染状态
+					map[loc[j] + 1] = 'X';    //病毒所在右侧元素被感染
+			if ((loc[j] - 1) >= 0 && map[loc[j] - 1] != '\0' && map[loc[j] - 1] == 'O')  //病毒如果想感染左侧边界病毒必须不能在map的左侧边界，而且左侧的元素必须处于未感染状态
+				map[loc[j] - 1] = 'X';   //病毒所在左侧元素被感染
 		}
 		number = 0;  //开始第二轮感染
-		for (int i = 0; i < (lineage + 1) * column; i++)
+		for (int i = 0; i < (lineage + 1) * column; i++)  //开始第二轮扫描map，再一次对病毒的位置和数量进行计数
 		{
 			if (map[i]== 'X')
 				number++;
 		}
-		p_l = &loc[0];
-		for (int i = 0; i < (lineage + 1) * column; i++)
+		p_l = &loc[0];  
+		for (int i = 0; i < (lineage + 1) * column; i++)  //找到病毒的位置
 		{
 			if (map[i] == 'X')
 			{
